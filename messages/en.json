@@ -1,0 +1,264 @@
+{
+  "Header": {
+    "brand": "VideoForge AI",
+    "examples": "Examples",
+    "reviews": "Reviews",
+    "faq": "FAQ",
+    "pricing": "Pricing",
+    "history": "History",
+    "videoGenerator": "Video Generator",
+    "dashboard": "Dashboard",
+    "login": "Login",
+    "getStarted": "Get Started",
+    "generate": "Generate"
+  },
+  "Hero": {
+    "title": "Transform Ideas into Stunning Videos",
+    "subtitle": "Create professional videos from text or images using advanced AI technology. Generate captivating content in minutes.",
+    "startCreating": "Start Creating",
+    "watchDemo": "Watch Demo"
+  },
+  "Examples": {
+    "title": "Stunning Examples",
+    "subtitle": "See what's possible with VideoForge AI"
+  },
+  "Testimonials": {
+    "title": "What Our Users Say",
+    "subtitle": "Join thousands of creators who trust VideoForge AI",
+    "items": [
+      {
+        "name": "Sarah Johnson",
+        "role": "Content Creator",
+        "avatar": "/professional-woman-portrait.png",
+        "content": "VideoForge has completely transformed my content creation workflow. The quality of videos it generates is absolutely stunning!",
+        "rating": 5
+      },
+      {
+        "name": "Michael Chen",
+        "role": "Marketing Director",
+        "avatar": "/professional-man-portrait.png",
+        "content": "We use VideoForge for all our marketing videos now. It saves us countless hours and the results are consistently impressive.",
+        "rating": 5
+      },
+      {
+        "name": "Emily Rodriguez",
+        "role": "Film Producer",
+        "avatar": "/professional-woman-filmmaker.jpg",
+        "content": "The level of detail and creativity in the generated videos is remarkable. This is the future of video production.",
+        "rating": 5
+      },
+      {
+        "name": "David Kim",
+        "role": "Social Media Manager",
+        "avatar": "/professional-man-social-media.jpg",
+        "content": "Creating engaging video content has never been easier. VideoForge understands exactly what I need from just a simple prompt.",
+        "rating": 5
+      },
+      {
+        "name": "Lisa Anderson",
+        "role": "YouTuber",
+        "avatar": "/professional-woman-youtuber.jpg",
+        "content": "As a solo creator, VideoForge is like having an entire video production team. The quality is incredible and it's so easy to use.",
+        "rating": 5
+      },
+      {
+        "name": "James Wilson",
+        "role": "Creative Director",
+        "avatar": "/professional-man-creative-director.jpg",
+        "content": "VideoForge has opened up new creative possibilities for our agency. We can now deliver high-quality video content at scale.",
+        "rating": 5
+      }
+    ]
+  },
+  "FAQ": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Everything you need to know about VideoForge AI",
+    "q1": "What is VideoForge AI?",
+    "a1": "VideoForge AI is an independent AI video generation platform that allows you to create professional videos from text descriptions or images. We use cutting-edge AI models to transform your ideas into stunning visual content.",
+    "q2": "How long does it take to generate a video?",
+    "a2": "Video generation typically takes 5-15 minutes depending on the complexity and duration of your video. Shorter videos (10 seconds) are faster, while longer videos (25 seconds) may take more time.",
+    "q3": "What video durations are supported?",
+    "a3": "We support three video durations: 10 seconds, 15 seconds, and 25 seconds. The 25-second option uses our Pro model for enhanced quality.",
+    "q4": "Can I use the generated videos commercially?",
+    "a4": "Yes, all videos generated with a paid subscription can be used for commercial purposes. Free tier videos are for personal use only.",
+    "q5": "What payment methods do you accept?",
+    "a5": "We accept all major credit cards and various payment methods through our secure payment processor Creem.",
+    "q6": "Is there a refund policy?",
+    "a6": "Yes, we offer a 7-day refund policy. If you're not satisfied with our service, please contact us within 7 days of purchase for a full refund.",
+    "q7": "How do I cancel my subscription?",
+    "a7": "You can cancel your subscription anytime from your dashboard settings. Your access will continue until the end of your current billing period.",
+    "q8": "Do credits expire?",
+    "a8": "Credits expire 12 months from the date of purchase. Unused credits roll over each month within this period."
+  },
+  "Footer": {
+    "brand": "VideoForge AI",
+    "tagline": "Transform your ideas into stunning videos with AI",
+    "product": "Product",
+    "features": "Features",
+    "pricing": "Pricing",
+    "generate": "Generate Video",
+    "history": "History",
+    "legal": "Legal",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "refund": "Refund Policy",
+    "copyright": "© 2025 VideoForge AI. All rights reserved.",
+    "disclaimer": "VideoForge AI is an independent platform and is not affiliated with or endorsed by any AI model providers."
+  },
+  "Disclaimer": {
+    "title": "Important Notice",
+    "content": "VideoForge AI is an independent platform that provides AI video generation services. We are not affiliated with, endorsed by, or connected to OpenAI, Anthropic, or any other AI model provider. Our service uses various AI technologies to deliver high-quality video generation capabilities."
+  },
+  "Generate": {
+    "title": "Generate Your Video",
+    "subtitle": "Choose your preferred method to create stunning AI-powered videos",
+    "textToVideo": "Text to Video",
+    "imageToVideo": "Image to Video",
+    "prompt": "Prompt",
+    "promptPlaceholder": "Describe the video you want to create...",
+    "duration": "Duration",
+    "aspectRatio": "Aspect Ratio",
+    "uploadImage": "Upload Image",
+    "dragDrop": "Drag and drop an image here, or click to select",
+    "generating": "Generating...",
+    "generate": "Generate Video",
+    "download": "Download Video",
+    "generationComplete": "Video generation complete!",
+    "error": "An error occurred"
+  },
+  "History": {
+    "title": "Generation History",
+    "welcome": "Welcome back",
+    "subtitle": "View and manage your video generation history"
+  },
+  "Auth": {
+    "login": "Sign In",
+    "signup": "Sign Up",
+    "email": "Email",
+    "password": "Password",
+    "confirmPassword": "Confirm Password",
+    "loginButton": "Sign In",
+    "signupButton": "Create Account",
+    "or": "Or continue with",
+    "github": "GitHub",
+    "google": "Google",
+    "noAccount": "Don't have an account?",
+    "haveAccount": "Already have an account?",
+    "signupLink": "Sign up",
+    "loginLink": "Sign in"
+  },
+  "Pricing": {
+    "badge": "VideoForge AI Pricing Plans",
+    "title": "Simple and",
+    "titleHighlight": "Transparent Pricing",
+    "titleEnd": "that Fits Your Needs",
+    "subtitle": "Choose a VideoForge AI subscription that matches your workflow. All tiers feature our breakthrough image-to-video AI with Complete Transparency. Adjust your plan anytime as requirements evolve.",
+    "monthly": "Monthly",
+    "yearly": "Yearly",
+    "oneTime": "One-Time",
+    "save": "Save 17%",
+    "getStarted": "Get Started",
+    "loading": "Loading..."
+  },
+  "PricingPlans": {
+    "starter": {
+      "name": "Starter",
+      "badge": "",
+      "credits": "249 credits/month | 10 videos",
+      "features": [
+        "AI style templates included",
+        "Fastest generation speed",
+        "Basic customer support",
+        "HD video quality"
+      ]
+    },
+    "basic": {
+      "name": "Basic",
+      "badge": "Most economical",
+      "credits": "749 credits/month | 30 videos",
+      "features": [
+        "All style templates included",
+        "Priority generation queue",
+        "Priority customer support",
+        "4K video quality"
+      ]
+    },
+    "pro": {
+      "name": "Pro",
+      "badge": "Most Popular",
+      "credits": "1499 credits/month | 60 videos",
+      "features": [
+        "All style templates included",
+        "Fastest generation speed",
+        "Priority customer support",
+        "Commercial use license",
+        "API access"
+      ]
+    },
+    "max": {
+      "name": "Max",
+      "badge": "Best value",
+      "credits": "2249 credits/month | 90 videos",
+      "features": [
+        "All style templates included",
+        "Fastest generation speed",
+        "Unlimited project storage",
+        "Commercial use license",
+        "API access",
+        "Dedicated support"
+      ]
+    },
+    "oneTimeNote": "One-time payment, credits never expire",
+    "usageTitle": "Usage & Licensing",
+    "usageNote": "Credits from subscriptions expire 12 months from the date of purchase. All subscriptions maintain your existing credits and roll over unused credits to the next month. Commercial use is included in Pro and Max tiers.",
+    "importantLabel": "Important",
+    "disclaimerNote": "VideoForge AI is an independent platform and is not affiliated with, endorsed by, or sponsored by any AI model providers."
+  },
+  "PricingFAQ": {
+    "title": "Frequently Asked Questions",
+    "items": [
+      {
+        "question": "What are credits and how do they function?",
+        "answer": "Credits are the currency used within VideoForge AI to generate videos. Each video generation consumes a certain number of credits based on the duration and quality settings. Credits are included in your subscription plan and refresh monthly."
+      },
+      {
+        "question": "Is it possible to change my subscription tier?",
+        "answer": "Yes, you can upgrade or downgrade your subscription tier at any time. Changes will take effect at the start of your next billing cycle. Any unused credits will roll over to your new plan."
+      },
+      {
+        "question": "Will my unused credits roll over to next month?",
+        "answer": "Yes, all unused credits automatically roll over to the next month. Credits expire 12 months from the date of purchase, giving you plenty of time to use them."
+      },
+      {
+        "question": "What distinguishes each pricing level?",
+        "answer": "Each tier offers different credit amounts and features. Higher tiers include more credits per month, priority generation queue, faster processing speeds, and additional features like commercial licensing and unlimited project storage."
+      },
+      {
+        "question": "Which subscription should I select?",
+        "answer": "Choose based on your video generation needs. Starter is great for occasional use, Basic for regular creators, Pro for professionals needing commercial rights, and Max for high-volume production. You can always upgrade as your needs grow."
+      },
+      {
+        "question": "Do you offer refunds?",
+        "answer": "We offer a 7-day money-back guarantee for first-time subscribers. If you're not satisfied with VideoForge AI within the first 7 days, contact our support team for a full refund."
+      },
+      {
+        "question": "What's the cancellation process?",
+        "answer": "You can cancel your subscription at any time from your account settings. Your access will continue until the end of your current billing period, and you'll retain any unused credits for 12 months."
+      },
+      {
+        "question": "Are enterprise packages available?",
+        "answer": "Yes, we offer custom enterprise packages for teams and organizations with high-volume needs. Contact our sales team at enterprise@videoforge.ai for a tailored solution with dedicated support and custom pricing."
+      },
+      {
+        "question": "What if my credits run out mid-cycle?",
+        "answer": "If you run out of credits before your monthly refresh, you can purchase additional credit packs or upgrade to a higher tier. Upgrades take effect immediately and provide instant access to more credits."
+      }
+    ]
+  },
+  "PricingCTA": {
+    "title": "Create Professional Videos",
+    "titleLine2": "with VideoForge AI",
+    "description": "Transform your ideas into stunning videos with VideoForge AI's advanced technology. Whether you're a content creator, marketer, or business, you have everything you need for professional video creation. Discover why VideoForge AI is the preferred choice for content creators worldwide.",
+    "button": "Start Creating with VideoForge AI"
+  }
+}

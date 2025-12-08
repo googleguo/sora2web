@@ -1,0 +1,58 @@
+{
+  "Header": {
+    "brand": "VideoForge AI",
+    "examples": "예시",
+    "reviews": "리뷰",
+    "faq": "FAQ",
+    "pricing": "가격",
+    "history": "히스토리",
+    "videoGenerator": "비디오 생성기",
+    "dashboard": "대시보드",
+    "login": "로그인",
+    "getStarted": "시작하기",
+    "generate": "생성"
+  },
+  "Hero": {
+    "title": "AI 비디오 생성기",
+    "subtitle": "텍스트나 이미지에서 몇 초 만에 멋진 비디오 만들기",
+    "description": "최첨단 AI 기술로 아이디어를 고품질 비디오 콘텐츠로 변환하세요.",
+    "getStarted": "시작하기",
+    "learnMore": "자세히 알아보기"
+  },
+  "Examples": {
+    "title": "AI 비디오 예시",
+    "subtitle": "VideoForge AI로 만들 수 있는 것을 확인하세요"
+  },
+  "Testimonials": {
+    "title": "사용자 후기",
+    "subtitle": "전 세계 크리에이터들의 신뢰"
+  },
+  "FAQ": {
+    "title": "자주 묻는 질문",
+    "subtitle": "VideoForge AI에 대해 알아야 할 사항"
+  },
+  "Disclaimer": {
+    "title": "면책 조항",
+    "content": "VideoForge AI는 AI 모델 제공업체와 제휴하지 않은 독립 플랫폼입니다. 우리는 텍스트 및 이미지를 비디오로 변환하는 기능을 제공하는 독립 서비스입니다. 모든 상표는 해당 소유자의 자산입니다."
+  },
+  "Footer": {
+    "brand": "VideoForge AI",
+    "tagline": "AI로 아이디어를 멋진 비디오로 변환하세요",
+    "product": "제품",
+    "features": "기능",
+    "pricing": "가격",
+    "generate": "비디오 생성",
+    "history": "히스토리",
+    "legal": "법적 정보",
+    "privacy": "개인정보 처리방침",
+    "terms": "이용 약관",
+    "refund": "환불 정책",
+    "copyright": "© 2025 VideoForge AI. All rights reserved.",
+    "disclaimer": "VideoForge AI는 독립 플랫폼으로 AI 모델 제공업체와 제휴하지 않습니다."
+  },
+  "Dashboard": {
+    "title": "대시보드",
+    "history": "히스토리",
+    "viewAllHistory": "모든 기록 보기"
+  }
+}

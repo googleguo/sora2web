@@ -1,0 +1,58 @@
+{
+  "Header": {
+    "brand": "VideoForge AI",
+    "examples": "Exemples",
+    "reviews": "Avis",
+    "faq": "FAQ",
+    "pricing": "Tarifs",
+    "history": "Historique",
+    "videoGenerator": "Générateur Vidéo",
+    "dashboard": "Tableau de bord",
+    "login": "Connexion",
+    "getStarted": "Commencer",
+    "generate": "Générer"
+  },
+  "Hero": {
+    "title": "Générateur de Vidéos AI",
+    "subtitle": "Créez des vidéos époustouflantes à partir de texte ou d'images en quelques secondes",
+    "description": "Transformez vos idées en contenu vidéo de haute qualité grâce à une technologie AI de pointe.",
+    "getStarted": "Commencer",
+    "learnMore": "En savoir plus"
+  },
+  "Examples": {
+    "title": "Exemples de Vidéos AI",
+    "subtitle": "Découvrez ce que vous pouvez créer avec VideoForge AI"
+  },
+  "Testimonials": {
+    "title": "Témoignages",
+    "subtitle": "Approuvé par des créateurs du monde entier"
+  },
+  "FAQ": {
+    "title": "Questions Fréquentes",
+    "subtitle": "Tout ce que vous devez savoir sur VideoForge AI"
+  },
+  "Disclaimer": {
+    "title": "Avertissement",
+    "content": "VideoForge AI est une plateforme indépendante non affiliée aux fournisseurs de modèles AI. Nous sommes un service indépendant offrant des capacités de génération texte-vidéo et image-vidéo. Toutes les marques appartiennent à leurs propriétaires respectifs."
+  },
+  "Footer": {
+    "brand": "VideoForge AI",
+    "tagline": "Transformez vos idées en vidéos époustouflantes avec AI",
+    "product": "Produit",
+    "features": "Fonctionnalités",
+    "pricing": "Tarifs",
+    "generate": "Générer Vidéo",
+    "history": "Historique",
+    "legal": "Légal",
+    "privacy": "Politique de Confidentialité",
+    "terms": "Conditions d'Utilisation",
+    "refund": "Politique de Remboursement",
+    "copyright": "© 2025 VideoForge AI. Tous droits réservés.",
+    "disclaimer": "VideoForge AI est une plateforme indépendante et n'est pas affiliée aux fournisseurs de modèles AI."
+  },
+  "Dashboard": {
+    "title": "Tableau de bord",
+    "history": "Historique",
+    "viewAllHistory": "Voir tout l'historique"
+  }
+}

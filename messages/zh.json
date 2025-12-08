@@ -1,0 +1,109 @@
+{
+  "Header": {
+    "brand": "VideoForge AI",
+    "examples": "案例",
+    "reviews": "评价",
+    "faq": "常见问题",
+    "pricing": "定价",
+    "history": "历史记录",
+    "videoGenerator": "视频生成器",
+    "dashboard": "控制面板",
+    "login": "登录",
+    "getStarted": "开始使用",
+    "generate": "生成视频"
+  },
+  "Hero": {
+    "title": "将创意转化为精彩视频",
+    "subtitle": "使用先进的AI技术从文本或图片创建专业视频。几分钟内生成引人入胜的内容。",
+    "startCreating": "开始创作",
+    "watchDemo": "观看演示"
+  },
+  "Examples": {
+    "title": "精彩案例",
+    "subtitle": "看看 VideoForge AI 的无限可能"
+  },
+  "Testimonials": {
+    "title": "用户评价",
+    "subtitle": "加入数千位信任 VideoForge AI 的创作者"
+  },
+  "FAQ": {
+    "title": "常见问题",
+    "subtitle": "关于 VideoForge AI 您需要了解的一切",
+    "q1": "什么是 VideoForge AI？",
+    "a1": "VideoForge AI 是一个独立的 AI 视频生成平台，允许您从文本描述或图片创建专业视频。我们使用尖端的 AI 模型将您的想法转化为精美的视觉内容。",
+    "q2": "生成视频需要多长时间？",
+    "a2": "视频生成通常需要 5-15 分钟，具体取决于视频的复杂度和时长。较短的视频（10秒）速度较快，较长的视频（25秒）可能需要更多时间。",
+    "q3": "支持哪些视频时长？",
+    "a3": "我们支持三种视频时长：10秒、15秒和25秒。25秒选项使用我们的 Pro 模型以获得更高的质量。",
+    "q4": "我可以商用生成的视频吗？",
+    "a4": "是的，使用付费订阅生成的所有视频都可以用于商业目的。免费版视频仅供个人使用。",
+    "q5": "你们接受哪些付款方式？",
+    "a5": "我们通过安全的支付处理商 Creem 接受所有主流信用卡和多种付款方式。",
+    "q6": "有退款政策吗？",
+    "a6": "是的，我们提供 7 天退款政策。如果您对我们的服务不满意，请在购买后 7 天内联系我们以获得全额退款。"
+  },
+  "Footer": {
+    "brand": "VideoForge AI",
+    "tagline": "用 AI 将创意转化为精彩视频",
+    "product": "产品",
+    "features": "功能",
+    "pricing": "定价",
+    "generate": "生成视频",
+    "history": "历史记录",
+    "legal": "法律",
+    "privacy": "隐私政策",
+    "terms": "服务条款",
+    "refund": "退款政策",
+    "copyright": "© 2025 VideoForge AI. 版权所有。",
+    "disclaimer": "VideoForge AI 是一个独立平台，与任何 AI 模型提供商无关联或背书。"
+  },
+  "Disclaimer": {
+    "title": "重要声明",
+    "content": "VideoForge AI 是一个提供 AI 视频生成服务的独立平台。我们与 OpenAI、Anthropic 或任何其他 AI 模型提供商无关联、背书或连接。我们的服务使用各种 AI 技术来提供高质量的视频生成能力。"
+  },
+  "Generate": {
+    "title": "生成您的视频",
+    "textToVideo": "文字生成视频",
+    "imageToVideo": "图片生成视频",
+    "prompt": "提示词",
+    "promptPlaceholder": "描述您想要创建的视频...",
+    "duration": "时长",
+    "aspectRatio": "画面比例",
+    "uploadImage": "上传图片",
+    "dragDrop": "拖放图片到此处，或点击选择",
+    "generating": "生成中...",
+    "generate": "生成视频",
+    "download": "下载视频",
+    "generationComplete": "视频生成完成！",
+    "error": "发生错误"
+  },
+  "Auth": {
+    "login": "登录",
+    "signup": "注册",
+    "email": "邮箱",
+    "password": "密码",
+    "confirmPassword": "确认密码",
+    "loginButton": "登录",
+    "signupButton": "创建账户",
+    "or": "或继续使用",
+    "github": "GitHub",
+    "google": "Google",
+    "noAccount": "还没有账户？",
+    "haveAccount": "已有账户？",
+    "signupLink": "注册",
+    "loginLink": "登录"
+  },
+  "Pricing": {
+    "title": "简单透明的定价",
+    "subtitle": "选择适合您需求的套餐",
+    "monthly": "月付",
+    "yearly": "年付",
+    "save": "节省 20%",
+    "choosePlan": "选择套餐",
+    "mostPopular": "最受欢迎",
+    "starter": "入门版",
+    "basic": "基础版",
+    "pro": "专业版",
+    "max": "旗舰版"
+  }
+}

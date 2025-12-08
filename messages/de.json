@@ -1,0 +1,58 @@
+{
+  "Header": {
+    "brand": "VideoForge AI",
+    "examples": "Beispiele",
+    "reviews": "Bewertungen",
+    "faq": "FAQ",
+    "pricing": "Preise",
+    "history": "Verlauf",
+    "videoGenerator": "Video Generator",
+    "dashboard": "Dashboard",
+    "login": "Anmelden",
+    "getStarted": "Jetzt starten",
+    "generate": "Generieren"
+  },
+  "Hero": {
+    "title": "AI Video-Generator",
+    "subtitle": "Erstellen Sie in Sekunden beeindruckende Videos aus Text oder Bildern",
+    "description": "Verwandeln Sie Ihre Ideen mit modernster AI-Technologie in hochwertige Videoinhalte.",
+    "getStarted": "Jetzt starten",
+    "learnMore": "Mehr erfahren"
+  },
+  "Examples": {
+    "title": "AI-Video-Beispiele",
+    "subtitle": "Sehen Sie, was Sie mit VideoForge AI erstellen können"
+  },
+  "Testimonials": {
+    "title": "Testimonials",
+    "subtitle": "Vertraut von Kreativen weltweit"
+  },
+  "FAQ": {
+    "title": "Häufig gestellte Fragen",
+    "subtitle": "Alles, was Sie über VideoForge AI wissen müssen"
+  },
+  "Disclaimer": {
+    "title": "Haftungsausschluss",
+    "content": "VideoForge AI ist eine unabhängige Plattform, die nicht mit AI-Modellanbietern verbunden ist. Wir sind ein unabhängiger Service, der Text-zu-Video- und Bild-zu-Video-Generierungsfunktionen bereitstellt. Alle Markenzeichen gehören ihren jeweiligen Eigentümern."
+  },
+  "Footer": {
+    "brand": "VideoForge AI",
+    "tagline": "Verwandeln Sie Ihre Ideen mit AI in beeindruckende Videos",
+    "product": "Produkt",
+    "features": "Funktionen",
+    "pricing": "Preise",
+    "generate": "Video generieren",
+    "history": "Verlauf",
+    "legal": "Rechtliches",
+    "privacy": "Datenschutzrichtlinie",
+    "terms": "Nutzungsbedingungen",
+    "refund": "Rückerstattungsrichtlinie",
+    "copyright": "© 2025 VideoForge AI. Alle Rechte vorbehalten.",
+    "disclaimer": "VideoForge AI ist eine unabhängige Plattform und ist nicht mit AI-Modellanbietern verbunden."
+  },
+  "Dashboard": {
+    "title": "Dashboard",
+    "history": "Verlauf",
+    "viewAllHistory": "Alle Historie anzeigen"
+  }
+}

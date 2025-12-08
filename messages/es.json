@@ -1,0 +1,58 @@
+{
+  "Header": {
+    "brand": "VideoForge AI",
+    "examples": "Ejemplos",
+    "reviews": "Reseñas",
+    "faq": "FAQ",
+    "pricing": "Precios",
+    "history": "Historial",
+    "videoGenerator": "Generador de Video",
+    "dashboard": "Panel",
+    "login": "Iniciar sesión",
+    "getStarted": "Comenzar",
+    "generate": "Generar"
+  },
+  "Hero": {
+    "title": "Generador de Videos AI",
+    "subtitle": "Crea videos impresionantes desde texto o imágenes en segundos",
+    "description": "Transforma tus ideas en contenido de video de alta calidad con tecnología AI de vanguardia.",
+    "getStarted": "Comenzar",
+    "learnMore": "Más información"
+  },
+  "Examples": {
+    "title": "Ejemplos de Videos AI",
+    "subtitle": "Mira lo que puedes crear con VideoForge AI"
+  },
+  "Testimonials": {
+    "title": "Testimonios",
+    "subtitle": "Confiado por creadores de todo el mundo"
+  },
+  "FAQ": {
+    "title": "Preguntas Frecuentes",
+    "subtitle": "Todo lo que necesitas saber sobre VideoForge AI"
+  },
+  "Disclaimer": {
+    "title": "Aviso Legal",
+    "content": "VideoForge AI es una plataforma independiente no afiliada con proveedores de modelos AI. Somos un servicio independiente que proporciona capacidades de generación de texto e imagen a video. Todas las marcas comerciales pertenecen a sus respectivos propietarios."
+  },
+  "Footer": {
+    "brand": "VideoForge AI",
+    "tagline": "Transforma tus ideas en videos impresionantes con AI",
+    "product": "Producto",
+    "features": "Funciones",
+    "pricing": "Precios",
+    "generate": "Generar Video",
+    "history": "Historial",
+    "legal": "Legal",
+    "privacy": "Política de Privacidad",
+    "terms": "Términos de Servicio",
+    "refund": "Política de Reembolso",
+    "copyright": "© 2025 VideoForge AI. Todos los derechos reservados.",
+    "disclaimer": "VideoForge AI es una plataforma independiente y no está afiliada a proveedores de modelos AI."
+  },
+  "Dashboard": {
+    "title": "Panel",
+    "history": "Historial",
+    "viewAllHistory": "Ver todo el historial"
+  }
+}
