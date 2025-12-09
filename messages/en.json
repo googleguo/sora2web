@@ -24,51 +24,7 @@
   },
   "Testimonials": {
     "title": "What Our Users Say",
-    "subtitle": "Join thousands of creators who trust VideoForge AI",
-    "items": [
-      {
-        "name": "Sarah Johnson",
-        "role": "Content Creator",
-        "avatar": "/professional-woman-portrait.png",
-        "content": "VideoForge has completely transformed my content creation workflow. The quality of videos it generates is absolutely stunning!",
-        "rating": 5
-      },
-      {
-        "name": "Michael Chen",
-        "role": "Marketing Director",
-        "avatar": "/professional-man-portrait.png",
-        "content": "We use VideoForge for all our marketing videos now. It saves us countless hours and the results are consistently impressive.",
-        "rating": 5
-      },
-      {
-        "name": "Emily Rodriguez",
-        "role": "Film Producer",
-        "avatar": "/professional-woman-filmmaker.jpg",
-        "content": "The level of detail and creativity in the generated videos is remarkable. This is the future of video production.",
-        "rating": 5
-      },
-      {
-        "name": "David Kim",
-        "role": "Social Media Manager",
-        "avatar": "/professional-man-social-media.jpg",
-        "content": "Creating engaging video content has never been easier. VideoForge understands exactly what I need from just a simple prompt.",
-        "rating": 5
-      },
-      {
-        "name": "Lisa Anderson",
-        "role": "YouTuber",
-        "avatar": "/professional-woman-youtuber.jpg",
-        "content": "As a solo creator, VideoForge is like having an entire video production team. The quality is incredible and it's so easy to use.",
-        "rating": 5
-      },
-      {
-        "name": "James Wilson",
-        "role": "Creative Director",
-        "avatar": "/professional-man-creative-director.jpg",
-        "content": "VideoForge has opened up new creative possibilities for our agency. We can now deliver high-quality video content at scale.",
-        "rating": 5
-      }
-    ]
+    "subtitle": "Join thousands of creators who trust VideoForge AI"
   },
   "FAQ": {
     "title": "Frequently Asked Questions",
