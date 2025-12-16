@@ -25,7 +25,7 @@ export async function POST(request: NextRequest) {
     })
 
     if (error) {
-      console.error("[v0] Supabase storage upload error:", error)
+      console.error("Supabase storage upload error:", error)
       return NextResponse.json({ error: `Failed to upload image: ${error.message}` }, { status: 500 })
     }
 
@@ -34,11 +34,11 @@ export async function POST(request: NextRequest) {
       data: { publicUrl },
     } = supabase.storage.from("sora2-file").getPublicUrl(filePath)
 
-    console.log("[v0] Image uploaded successfully:", publicUrl)
+    console.log("Image uploaded successfully:", publicUrl)
 
     return NextResponse.json({ imageUrl: publicUrl })
   } catch (error) {
-    console.error("[v0] Error uploading image:", error)
+    console.error("Error uploading image:", error)
     return NextResponse.json({ error: "Failed to upload image" }, { status: 500 })
   }
 }
