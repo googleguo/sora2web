@@ -19,7 +19,7 @@ export async function POST(request: NextRequest) {
     const filePath = `uploads/${fileName}`
 
     // Upload file to Supabase Storage
-    const { data, error } = await supabase.storage.from("video-images").upload(filePath, file, {
+    const { data, error } = await supabase.storage.from("sora2-file").upload(filePath, file, {
       contentType: file.type,
       upsert: false,
     })
@@ -32,7 +32,7 @@ export async function POST(request: NextRequest) {
     // Get public URL for the uploaded file
     const {
       data: { publicUrl },
-    } = supabase.storage.from("video-images").getPublicUrl(filePath)
+    } = supabase.storage.from("sora2-file").getPublicUrl(filePath)
 
     console.log("[v0] Image uploaded successfully:", publicUrl)
 
