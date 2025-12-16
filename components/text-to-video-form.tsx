@@ -125,7 +125,8 @@ export function TextToVideoForm() {
                   duration: selectedDuration,
                   aspectRatio,
                   model,
-                  videoId: statusData.videoId || undefined,
+                  videoId: statusData.videoId || statusData.id ||undefined,
+                  progress: statusData.progress || undefined,
                 }),
               })
             } catch (saveErr) {

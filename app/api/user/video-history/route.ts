@@ -54,7 +54,7 @@ export async function POST(request: Request) {
     }
 
     const body = await request.json()
-    const { type, prompt, videoUrl, duration, aspectRatio, model, imageUrl, videoId } = body
+    const { type, prompt, videoUrl, duration, aspectRatio, model, imageUrl, videoId,progress } = body
 
     if (!type || !prompt || !videoUrl || !duration || !aspectRatio || !model) {
       return NextResponse.json({ error: "Missing required fields" }, { status: 400 })

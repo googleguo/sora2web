@@ -1,4 +1,4 @@
-# Sora AI Video Generator Clone
+# Sora AI Video Generator 
 
 A modern AI video generation platform built with Next.js and Tailwind CSS, featuring text-to-video and image-to-video capabilities with integrated payment processing.
 
@@ -72,11 +72,11 @@ NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
 ### 3. Configure Integrations
 
 #### Sora API
-1. Get API key from [Duomi API](https://duomiapi.com)
+1. Get API key from [Duomi API]
 2. Add to `SORA_API_KEY` in environment variables
 
 #### Creem Payments
-1. Sign up at [Creem](https://creem.io)
+1. Sign up at [Creem]
 2. Create products for each pricing tier (see `CREEM_SETUP.md`)
 3. Update product IDs in `components/pricing-cards.tsx`
 4. Add API key to environment variables
@@ -136,7 +136,9 @@ Open [http://localhost:3000](http://localhost:3000) to view the application.
 
 - `CREEM_SETUP.md` - Creem payment integration guide
 - `STORAGE_SETUP.md` - Supabase storage configuration
-- API documentation available at [Duomi API Docs](https://s.apifox.cn/b924931e-29c0-4127-b025-d68c90285060/api-357826026)
+
+## Technical Support
+- Please add WeChat: luckgather
 
 ## License
 

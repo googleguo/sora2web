@@ -35,6 +35,7 @@ export async function GET(request: NextRequest) {
       status: response.status,
       state: data.state,
       taskId: data.id,
+      progress: data.progress,
     })
 
     if (!response.ok) {
@@ -53,6 +54,7 @@ export async function GET(request: NextRequest) {
       videoUrl: data.state === "succeeded" ? data.data?.videos?.[0]?.url : null,
       videoId: data.state === "succeeded" ? videoId : null,
       message: data.message,
+      progress: data.progress,
       createTime: data.create_time,
       updateTime: data.update_time,
     })

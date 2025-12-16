@@ -146,6 +146,7 @@ export async function POST(request: NextRequest) {
         model,
         prompt: prompt.substring(0, 100),
       },
+      task_id: taskId,
     })
 
     if (historyError) {
