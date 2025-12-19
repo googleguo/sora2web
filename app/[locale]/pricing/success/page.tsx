@@ -20,7 +20,7 @@ function SuccessContent({ dict }: { dict: any }) {
 
           <h1 className="text-4xl font-bold mb-4 text-balance">Payment Successful!</h1>
           <p className="text-xl text-muted-foreground mb-8">
-            Thank you for subscribing to VideoForge AI. Your account has been upgraded and credits are now available.
+            Thank you for subscribing to SoraVideo AI. Your account has been upgraded and credits are now available.
           </p>
 
           <div className="bg-card/50 backdrop-blur border border-border rounded-lg p-6 mb-8">

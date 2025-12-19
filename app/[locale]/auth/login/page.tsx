@@ -94,7 +94,7 @@ export default function LoginPage() {
       <div className="w-full max-w-sm">
         <Card>
           <CardHeader className="text-center">
-            <CardTitle className="text-2xl">Welcome to VideoForge AI</CardTitle>
+            <CardTitle className="text-2xl">Welcome to SoraVideo AI</CardTitle>
             <CardDescription>Sign in to start generating videos</CardDescription>
           </CardHeader>
           <CardContent>

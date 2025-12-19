@@ -1,6 +1,6 @@
 # Creem Payment Integration Setup
 
-This guide explains how to set up and use the Creem payment integration for VideoForge AI.
+This guide explains how to set up and use the Creem payment integration for SoraVideo AI.
 
 ## Environment Variables
 
@@ -107,4 +107,4 @@ Use Creem test mode for development:
 ## Support
 
 For Creem-specific issues, refer to: https://docs.creem.io
-For VideoForge AI support: support@videoforge.ai
+For SoraVideo AI support: support@SoraVideo.ltd

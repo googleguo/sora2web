@@ -1,6 +1,6 @@
 {
   "Header": {
-    "brand": "VideoForge AI",
+    "brand": "SoraVideo AI",
     "examples": "Ejemplos",
     "reviews": "Reseñas",
     "faq": "FAQ",
@@ -21,7 +21,7 @@
   },
   "Examples": {
     "title": "Ejemplos de Videos AI",
-    "subtitle": "Mira lo que puedes crear con VideoForge AI"
+    "subtitle": "Mira lo que puedes crear con SoraVideo AI"
   },
   "Testimonials": {
     "title": "Testimonios",
@@ -29,14 +29,14 @@
   },
   "FAQ": {
     "title": "Preguntas Frecuentes",
-    "subtitle": "Todo lo que necesitas saber sobre VideoForge AI"
+    "subtitle": "Todo lo que necesitas saber sobre SoraVideo AI"
   },
   "Disclaimer": {
     "title": "Aviso Legal",
-    "content": "VideoForge AI es una plataforma independiente no afiliada con proveedores de modelos AI. Somos un servicio independiente que proporciona capacidades de generación de texto e imagen a video. Todas las marcas comerciales pertenecen a sus respectivos propietarios."
+    "content": "SoraVideo AI es una plataforma independiente no afiliada con proveedores de modelos AI. Somos un servicio independiente que proporciona capacidades de generación de texto e imagen a video. Todas las marcas comerciales pertenecen a sus respectivos propietarios."
   },
   "Footer": {
-    "brand": "VideoForge AI",
+    "brand": "SoraVideo AI",
     "tagline": "Transforma tus ideas en videos impresionantes con AI",
     "product": "Producto",
     "features": "Funciones",
@@ -47,8 +47,8 @@
     "privacy": "Política de Privacidad",
     "terms": "Términos de Servicio",
     "refund": "Política de Reembolso",
-    "copyright": "© 2025 VideoForge AI. Todos los derechos reservados.",
-    "disclaimer": "VideoForge AI es una plataforma independiente y no está afiliada a proveedores de modelos AI."
+    "copyright": "© 2025 SoraVideo AI. Todos los derechos reservados.",
+    "disclaimer": "SoraVideo AI es una plataforma independiente y no está afiliada a proveedores de modelos AI."
   },
   "Dashboard": {
     "title": "Panel",

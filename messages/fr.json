@@ -1,6 +1,6 @@
 {
   "Header": {
-    "brand": "VideoForge AI",
+    "brand": "SoraVideo AI",
     "examples": "Exemples",
     "reviews": "Avis",
     "faq": "FAQ",
@@ -21,7 +21,7 @@
   },
   "Examples": {
     "title": "Exemples de Vidéos AI",
-    "subtitle": "Découvrez ce que vous pouvez créer avec VideoForge AI"
+    "subtitle": "Découvrez ce que vous pouvez créer avec SoraVideo AI"
   },
   "Testimonials": {
     "title": "Témoignages",
@@ -29,14 +29,14 @@
   },
   "FAQ": {
     "title": "Questions Fréquentes",
-    "subtitle": "Tout ce que vous devez savoir sur VideoForge AI"
+    "subtitle": "Tout ce que vous devez savoir sur SoraVideo AI"
   },
   "Disclaimer": {
     "title": "Avertissement",
-    "content": "VideoForge AI est une plateforme indépendante non affiliée aux fournisseurs de modèles AI. Nous sommes un service indépendant offrant des capacités de génération texte-vidéo et image-vidéo. Toutes les marques appartiennent à leurs propriétaires respectifs."
+    "content": "SoraVideo AI est une plateforme indépendante non affiliée aux fournisseurs de modèles AI. Nous sommes un service indépendant offrant des capacités de génération texte-vidéo et image-vidéo. Toutes les marques appartiennent à leurs propriétaires respectifs."
   },
   "Footer": {
-    "brand": "VideoForge AI",
+    "brand": "SoraVideo AI",
     "tagline": "Transformez vos idées en vidéos époustouflantes avec AI",
     "product": "Produit",
     "features": "Fonctionnalités",
@@ -47,8 +47,8 @@
     "privacy": "Politique de Confidentialité",
     "terms": "Conditions d'Utilisation",
     "refund": "Politique de Remboursement",
-    "copyright": "© 2025 VideoForge AI. Tous droits réservés.",
-    "disclaimer": "VideoForge AI est une plateforme indépendante et n'est pas affiliée aux fournisseurs de modèles AI."
+    "copyright": "© 2025 SoraVideo AI. Tous droits réservés.",
+    "disclaimer": "SoraVideo AI est une plateforme indépendante et n'est pas affiliée aux fournisseurs de modèles AI."
   },
   "Dashboard": {
     "title": "Tableau de bord",

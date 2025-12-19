@@ -5,8 +5,8 @@ import { Alert, AlertDescription } from "@/components/ui/alert"
 import { getDictionary } from "@/lib/i18n/get-dictionary"
 
 export const metadata = {
-  title: "Refund Policy | VideoForge AI",
-  description: "Our refund terms and eligibility criteria for VideoForge AI subscriptions",
+  title: "Refund Policy | SoraVideo AI",
+  description: "Our refund terms and eligibility criteria for SoraVideo AI subscriptions",
 }
 
 export default async function RefundPage({
@@ -29,7 +29,7 @@ export default async function RefundPage({
 
           <div className="prose prose-invert prose-headings:text-foreground prose-p:text-muted-foreground prose-a:text-primary prose-strong:text-foreground prose-li:text-muted-foreground max-w-none">
             <p className="text-lg">
-              At VideoForge AI, we want you to be completely satisfied with your subscription. If you're not happy with
+              At SoraVideo AI, we want you to be completely satisfied with your subscription. If you're not happy with
               our service, we offer refunds under the conditions outlined below.
             </p>
 
@@ -57,7 +57,7 @@ export default async function RefundPage({
                     <div>
                       <h3 className="text-xl font-semibold mb-2">Usage Limits</h3>
                       <p className="text-muted-foreground">
-                        Your VideoForge AI account must have utilized{" "}
+                        Your SoraVideo AI account must have utilized{" "}
                         <strong className="text-foreground">fewer than 160 credits</strong> to qualify for a refund.
                         This ensures refunds are available to users who genuinely haven't benefited from the service.
                       </p>
@@ -77,10 +77,10 @@ export default async function RefundPage({
                     <h3 className="text-xl font-semibold mb-2">Contact Method</h3>
                     <p className="text-muted-foreground mb-3">Email our support team at:</p>
                     <a
-                      href="mailto:support@videoforge.ai"
+                      href="mailto:support@SoraVideo.ltd"
                       className="text-primary hover:underline text-lg font-semibold"
                     >
-                      support@videoforge.ai
+                      support@SoraVideo.ltd
                     </a>
                   </div>
                 </div>
@@ -89,7 +89,7 @@ export default async function RefundPage({
               <h3 className="text-2xl font-semibold mb-4">Required Information</h3>
               <p>Please include the following details in your refund request:</p>
               <ul className="list-disc pl-6 space-y-2">
-                <li>Your VideoForge AI account email address</li>
+                <li>Your SoraVideo AI account email address</li>
                 <li>Full name associated with the account</li>
                 <li>Transaction ID or order number</li>
                 <li>Payment date</li>
@@ -163,8 +163,8 @@ export default async function RefundPage({
                 <div className="flex flex-col items-center gap-2">
                   <p className="text-lg">
                     <strong>Email:</strong>{" "}
-                    <a href="mailto:support@videoforge.ai" className="text-primary hover:underline">
-                      support@videoforge.ai
+                    <a href="mailto:support@SoraVideo.ltd" className="text-primary hover:underline">
+                      support@SoraVideo.ltd
                     </a>
                   </p>
                   <p className="text-sm text-muted-foreground">

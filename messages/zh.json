@@ -1,6 +1,6 @@
 {
   "Header": {
-    "brand": "VideoForge AI",
+    "brand": "SoraVideo AI",
     "examples": "案例",
     "reviews": "评价",
     "faq": "常见问题",
@@ -20,17 +20,17 @@
   },
   "Examples": {
     "title": "精彩案例",
-    "subtitle": "看看 VideoForge AI 的无限可能"
+    "subtitle": "看看 SoraVideo AI 的无限可能"
   },
   "Testimonials": {
     "title": "用户评价",
-    "subtitle": "加入数千位信任 VideoForge AI 的创作者"
+    "subtitle": "加入数千位信任 SoraVideo AI 的创作者"
   },
   "FAQ": {
     "title": "常见问题",
-    "subtitle": "关于 VideoForge AI 您需要了解的一切",
-    "q1": "什么是 VideoForge AI？",
-    "a1": "VideoForge AI 是一个独立的 AI 视频生成平台，允许您从文本描述或图片创建专业视频。我们使用尖端的 AI 模型将您的想法转化为精美的视觉内容。",
+    "subtitle": "关于 SoraVideo AI 您需要了解的一切",
+    "q1": "什么是 SoraVideo AI？",
+    "a1": "SoraVideo AI 是一个独立的 AI 视频生成平台，允许您从文本描述或图片创建专业视频。我们使用尖端的 AI 模型将您的想法转化为精美的视觉内容。",
     "q2": "生成视频需要多长时间？",
     "a2": "视频生成通常需要 5-15 分钟，具体取决于视频的复杂度和时长。较短的视频（10秒）速度较快，较长的视频（25秒）可能需要更多时间。",
     "q3": "支持哪些视频时长？",
@@ -43,7 +43,7 @@
     "a6": "是的，我们提供 7 天退款政策。如果您对我们的服务不满意，请在购买后 7 天内联系我们以获得全额退款。"
   },
   "Footer": {
-    "brand": "VideoForge AI",
+    "brand": "SoraVideo AI",
     "tagline": "用 AI 将创意转化为精彩视频",
     "product": "产品",
     "features": "功能",
@@ -54,12 +54,12 @@
     "privacy": "隐私政策",
     "terms": "服务条款",
     "refund": "退款政策",
-    "copyright": "© 2025 VideoForge AI. 版权所有。",
-    "disclaimer": "VideoForge AI 是一个独立平台，与任何 AI 模型提供商无关联或背书。"
+    "copyright": "© 2025 SoraVideo AI. 版权所有。",
+    "disclaimer": "SoraVideo AI 是一个独立平台，与任何 AI 模型提供商无关联或背书。"
   },
   "Disclaimer": {
     "title": "重要声明",
-    "content": "VideoForge AI 是一个提供 AI 视频生成服务的独立平台。我们与 OpenAI、Anthropic 或任何其他 AI 模型提供商无关联、背书或连接。我们的服务使用各种 AI 技术来提供高质量的视频生成能力。"
+    "content": "SoraVideo AI 是一个提供 AI 视频生成服务的独立平台。我们与 OpenAI、Anthropic 或任何其他 AI 模型提供商无关联、背书或连接。我们的服务使用各种 AI 技术来提供高质量的视频生成能力。"
   },
   "Generate": {
     "title": "生成您的视频",

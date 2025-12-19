@@ -269,7 +269,7 @@ export function PricingCards({ dict }: PricingCardsProps) {
             <p className="text-xs text-muted-foreground mt-4 border-t border-border pt-4">
               <strong>{dict.PricingPlans?.importantLabel || "Important"}:</strong>{" "}
               {dict.PricingPlans?.disclaimerNote ||
-                "VideoForge AI is an independent platform and is not affiliated with, endorsed by, or sponsored by any AI model providers."}
+                "SoraVideo AI is an independent platform and is not affiliated with, endorsed by, or sponsored by any AI model providers."}
             </p>
           </div>
         </div>

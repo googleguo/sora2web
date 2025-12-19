@@ -119,7 +119,7 @@ export function HistoryClient() {
                   onClick={() => {
                     const a = document.createElement("a")
                     a.href = record.videoUrl
-                    a.download = `videoforge-${record.id}.mp4`
+                    a.download = `SoraVideo-${record.id}.mp4`
                     a.click()
                   }}
                 >

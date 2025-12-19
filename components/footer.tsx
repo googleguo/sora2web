@@ -6,7 +6,7 @@ type FooterProps = {
 }
 
 const defaultFooter = {
-  brand: "VideoForge AI",
+  brand: "SoraVideo AI",
   tagline: "Transform your ideas into stunning videos with AI",
   product: "Product",
   features: "Features",
@@ -17,9 +17,9 @@ const defaultFooter = {
   privacy: "Privacy Policy",
   terms: "Terms of Service",
   refund: "Refund Policy",
-  copyright: "© 2025 VideoForge AI. All rights reserved.",
+  copyright: "© 2025 SoraVideo AI. All rights reserved.",
   disclaimer:
-    "VideoForge AI is an independent platform and is not affiliated with or endorsed by any AI model providers.",
+    "SoraVideo AI is an independent platform and is not affiliated with or endorsed by any AI model providers.",
 }
 
 export function Footer({ dict }: FooterProps) {
@@ -36,8 +36,8 @@ export function Footer({ dict }: FooterProps) {
             </Link>
             <p className="text-sm text-muted-foreground">{footer.tagline}</p>
             <p className="text-sm text-primary">
-              <a href="mailto:support@videoforge.ai" className="hover:underline">
-                support@videoforge.ai
+              <a href="mailto:support@SoraVideo.ltd" className="hover:underline">
+                support@SoraVideo.ltd
               </a>
             </p>
           </div>

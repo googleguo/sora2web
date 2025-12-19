@@ -1,6 +1,6 @@
 {
   "Header": {
-    "brand": "VideoForge AI",
+    "brand": "SoraVideo AI",
     "examples": "Beispiele",
     "reviews": "Bewertungen",
     "faq": "FAQ",
@@ -21,7 +21,7 @@
   },
   "Examples": {
     "title": "AI-Video-Beispiele",
-    "subtitle": "Sehen Sie, was Sie mit VideoForge AI erstellen können"
+    "subtitle": "Sehen Sie, was Sie mit SoraVideo AI erstellen können"
   },
   "Testimonials": {
     "title": "Testimonials",
@@ -29,14 +29,14 @@
   },
   "FAQ": {
     "title": "Häufig gestellte Fragen",
-    "subtitle": "Alles, was Sie über VideoForge AI wissen müssen"
+    "subtitle": "Alles, was Sie über SoraVideo AI wissen müssen"
   },
   "Disclaimer": {
     "title": "Haftungsausschluss",
-    "content": "VideoForge AI ist eine unabhängige Plattform, die nicht mit AI-Modellanbietern verbunden ist. Wir sind ein unabhängiger Service, der Text-zu-Video- und Bild-zu-Video-Generierungsfunktionen bereitstellt. Alle Markenzeichen gehören ihren jeweiligen Eigentümern."
+    "content": "SoraVideo AI ist eine unabhängige Plattform, die nicht mit AI-Modellanbietern verbunden ist. Wir sind ein unabhängiger Service, der Text-zu-Video- und Bild-zu-Video-Generierungsfunktionen bereitstellt. Alle Markenzeichen gehören ihren jeweiligen Eigentümern."
   },
   "Footer": {
-    "brand": "VideoForge AI",
+    "brand": "SoraVideo AI",
     "tagline": "Verwandeln Sie Ihre Ideen mit AI in beeindruckende Videos",
     "product": "Produkt",
     "features": "Funktionen",
@@ -47,8 +47,8 @@
     "privacy": "Datenschutzrichtlinie",
     "terms": "Nutzungsbedingungen",
     "refund": "Rückerstattungsrichtlinie",
-    "copyright": "© 2025 VideoForge AI. Alle Rechte vorbehalten.",
-    "disclaimer": "VideoForge AI ist eine unabhängige Plattform und ist nicht mit AI-Modellanbietern verbunden."
+    "copyright": "© 2025 SoraVideo AI. Alle Rechte vorbehalten.",
+    "disclaimer": "SoraVideo AI ist eine unabhängige Plattform und ist nicht mit AI-Modellanbietern verbunden."
   },
   "Dashboard": {
     "title": "Dashboard",

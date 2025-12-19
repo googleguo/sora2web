@@ -10,7 +10,7 @@ type HeaderProps = {
 }
 
 const defaultHeader = {
-  brand: "VideoForge AI",
+  brand: "SoraVideo AI",
   examples: "Examples",
   reviews: "Reviews",
   faq: "FAQ",

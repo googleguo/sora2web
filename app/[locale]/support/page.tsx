@@ -6,8 +6,8 @@ import { Mail, HelpCircle, CreditCard, AlertCircle, FileText, MessageSquare } fr
 import { getDictionary } from "@/lib/i18n/get-dictionary"
 
 export const metadata = {
-  title: "Contact & Support | VideoForge AI",
-  description: "Get help with your VideoForge AI account, billing, and technical issues",
+  title: "Contact & Support | SoraVideo AI",
+  description: "Get help with your SoraVideo AI account, billing, and technical issues",
 }
 
 export default async function SupportPage({
@@ -43,7 +43,7 @@ export default async function SupportPage({
                   <strong>Response Time:</strong> We typically respond within 24 hours during business days
                 </p>
                 <Button size="lg" asChild>
-                  <a href="mailto:support@videoforge.ai">support@videoforge.ai</a>
+                  <a href="mailto:support@SoraVideo.ltd">support@SoraVideo.ltd</a>
                 </Button>
               </div>
             </div>
@@ -54,7 +54,7 @@ export default async function SupportPage({
             <h2 className="text-3xl font-bold mb-6">How Can We Help?</h2>
             <div className="grid gap-6 md:grid-cols-2">
               <Card className="p-6 hover:bg-muted/50 transition-colors cursor-pointer">
-                <a href="mailto:support@videoforge.ai?subject=General%20Question" className="block">
+                <a href="mailto:support@SoraVideo.ltd?subject=General%20Question" className="block">
                   <div className="flex items-start gap-4">
                     <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
                       <HelpCircle className="w-6 h-6 text-primary" />
@@ -68,7 +68,7 @@ export default async function SupportPage({
               </Card>
 
               <Card className="p-6 hover:bg-muted/50 transition-colors cursor-pointer">
-                <a href="mailto:support@videoforge.ai?subject=Billing%20Issue" className="block">
+                <a href="mailto:support@SoraVideo.ltd?subject=Billing%20Issue" className="block">
                   <div className="flex items-start gap-4">
                     <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
                       <CreditCard className="w-6 h-6 text-primary" />
@@ -82,7 +82,7 @@ export default async function SupportPage({
               </Card>
 
               <Card className="p-6 hover:bg-muted/50 transition-colors cursor-pointer">
-                <a href="mailto:support@videoforge.ai?subject=Technical%20Issue" className="block">
+                <a href="mailto:support@SoraVideo.ltd?subject=Technical%20Issue" className="block">
                   <div className="flex items-start gap-4">
                     <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
                       <AlertCircle className="w-6 h-6 text-primary" />
@@ -96,7 +96,7 @@ export default async function SupportPage({
               </Card>
 
               <Card className="p-6 hover:bg-muted/50 transition-colors cursor-pointer">
-                <a href="mailto:support@videoforge.ai?subject=Refund%20Request" className="block">
+                <a href="mailto:support@SoraVideo.ltd?subject=Refund%20Request" className="block">
                   <div className="flex items-start gap-4">
                     <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
                       <FileText className="w-6 h-6 text-primary" />
@@ -124,7 +124,7 @@ export default async function SupportPage({
                 <li className="flex items-start gap-2">
                   <span className="text-primary font-semibold mt-0.5">•</span>
                   <span>
-                    <strong>Via Dashboard:</strong> Navigate to Account → Billing in your VideoForge AI dashboard
+                    <strong>Via Dashboard:</strong> Navigate to Account → Billing in your SoraVideo AI dashboard
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
@@ -218,9 +218,9 @@ export default async function SupportPage({
           {/* Disclaimer */}
           <div className="mt-12 text-center">
             <p className="text-sm text-muted-foreground">
-              <strong>Important:</strong> VideoForge AI is an independent platform providing custom interfaces for
+              <strong>Important:</strong> SoraVideo AI is an independent platform providing custom interfaces for
               third-party AI models. We are not affiliated with any AI model providers. For support with our platform,
-              contact us at support@videoforge.ai
+              contact us at support@SoraVideo.ltd
             </p>
           </div>
         </div>

@@ -19,10 +19,11 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: "VideoForge AI - AI Video Generator | Text & Image to Video",
+  title: "SoraVideo - AI Video Generation | Sora AI, VideoForge & Veo Integration | Text & Image to Video",
   description:
-    "Generate stunning videos from text prompts or images with VideoForge AI. Transform your ideas into professional videos powered by advanced AI technology. Independent platform using cutting-edge AI models.",
-  generator: "VideoForge AI",
+    "Create stunning videos with SoraVideo's advanced AI technology. Leverage Sora AI, VideoForge AI, and Veo integration to transform text and images into professional videos. Discover the future of video creation with SoraVideo.",
+  keywords: "SoraVideo, AI video generation, Sora AI, sora2, VideoForge AI, Veo, text to video, image to video",
+    generator: "SoraVideo AI",
 }
 
 export function generateStaticParams() {

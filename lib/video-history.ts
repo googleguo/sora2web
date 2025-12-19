@@ -26,7 +26,7 @@ export function saveVideoRecord(record: Omit<VideoRecord, "id" | "createdAt">): 
   const limitedHistory = history.slice(0, 50)
 
   if (typeof window !== "undefined") {
-    localStorage.setItem("videoforge-history", JSON.stringify(limitedHistory))
+    localStorage.setItem("SoraVideo-history", JSON.stringify(limitedHistory))
   }
 
   return newRecord
@@ -37,7 +37,7 @@ export function getVideoHistory(): VideoRecord[] {
     return []
   }
 
-  const stored = localStorage.getItem("videoforge-history")
+  const stored = localStorage.getItem("SoraVideo-history")
   if (!stored) {
     return []
   }
@@ -54,12 +54,12 @@ export function deleteVideoRecord(id: string): void {
   const filtered = history.filter((record) => record.id !== id)
 
   if (typeof window !== "undefined") {
-    localStorage.setItem("videoforge-history", JSON.stringify(filtered))
+    localStorage.setItem("SoraVideo-history", JSON.stringify(filtered))
   }
 }
 
 export function clearVideoHistory(): void {
   if (typeof window !== "undefined") {
-    localStorage.removeItem("videoforge-history")
+    localStorage.removeItem("SoraVideo-history")
   }
 }

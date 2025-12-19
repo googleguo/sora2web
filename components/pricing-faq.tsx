@@ -12,7 +12,7 @@ export function PricingFAQ({ dict }: PricingFAQProps) {
     {
       question: "What are credits and how do they function?",
       answer:
-        "Credits are the currency used within VideoForge AI to generate videos. Each video generation consumes a certain number of credits based on the duration and quality settings. Credits are included in your subscription plan and refresh monthly.",
+        "Credits are the currency used within SoraVideo AI to generate videos. Each video generation consumes a certain number of credits based on the duration and quality settings. Credits are included in your subscription plan and refresh monthly.",
     },
     {
       question: "Is it possible to change my subscription tier?",
@@ -37,7 +37,7 @@ export function PricingFAQ({ dict }: PricingFAQProps) {
     {
       question: "Do you offer refunds?",
       answer:
-        "We offer a 7-day money-back guarantee for first-time subscribers. If you're not satisfied with VideoForge AI within the first 7 days, contact our support team for a full refund.",
+        "We offer a 7-day money-back guarantee for first-time subscribers. If you're not satisfied with SoraVideo AI within the first 7 days, contact our support team for a full refund.",
     },
     {
       question: "What's the cancellation process?",
@@ -47,7 +47,7 @@ export function PricingFAQ({ dict }: PricingFAQProps) {
     {
       question: "Are enterprise packages available?",
       answer:
-        "Yes, we offer custom enterprise packages for teams and organizations with high-volume needs. Contact our sales team at enterprise@videoforge.ai for a tailored solution with dedicated support and custom pricing.",
+        "Yes, we offer custom enterprise packages for teams and organizations with high-volume needs. Contact our sales team at enterprise@SoraVideo.ltd for a tailored solution with dedicated support and custom pricing.",
     },
     {
       question: "What if my credits run out mid-cycle?",

@@ -8,7 +8,7 @@ type FooterClientProps = {
 }
 
 const defaultFooter = {
-  brand: "VideoForge AI",
+  brand: "SoraVideo AI",
   tagline: "Transform your ideas into stunning videos with AI",
   product: "Product",
   features: "Features",

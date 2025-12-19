@@ -3,8 +3,8 @@ import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 
 export const metadata = {
-  title: "Privacy Policy | VideoForge AI",
-  description: "How VideoForge AI protects your privacy and handles your data",
+  title: "Privacy Policy | SoraVideo AI",
+  description: "How SoraVideo AI protects your privacy and handles your data",
 }
 
 export default async function PrivacyPage({
@@ -26,8 +26,8 @@ export default async function PrivacyPage({
           <section className="mt-8">
             <h2 className="text-2xl font-semibold mb-4">Introduction</h2>
             <p>
-              Welcome to VideoForge AI's Privacy Policy. This document explains how we collect, use, and protect your
-              personal information when you use our AI video generation platform at videoforge.ai. VideoForge AI is an
+              Welcome to SoraVideo AI's Privacy Policy. This document explains how we collect, use, and protect your
+              personal information when you use our AI video generation platform at SoraVideo.ltd. SoraVideo AI is an
               independent platform and is not affiliated with any AI model providers.
             </p>
           </section>
@@ -125,7 +125,7 @@ export default async function PrivacyPage({
               </li>
             </ul>
             <p className="mt-4">
-              To exercise these rights, contact us at <a href="mailto:support@videoforge.ai">support@videoforge.ai</a>
+              To exercise these rights, contact us at <a href="mailto:support@SoraVideo.ltd">support@SoraVideo.ltd</a>
             </p>
           </section>
 
@@ -167,13 +167,13 @@ export default async function PrivacyPage({
 
             <h3 className="text-xl font-semibold mt-6 mb-3">Minors:</h3>
             <p>
-              VideoForge AI does not knowingly collect data from users under 13 years of age. If we discover such
+              SoraVideo AI does not knowingly collect data from users under 13 years of age. If we discover such
               collection, we will promptly delete the information.
             </p>
 
             <h3 className="text-xl font-semibold mt-6 mb-3">International Data Transfers:</h3>
             <p>
-              If you access VideoForge AI from outside our primary jurisdiction, your data may be transferred
+              If you access SoraVideo AI from outside our primary jurisdiction, your data may be transferred
               internationally. We implement appropriate safeguards for cross-border data processing.
             </p>
 
@@ -206,7 +206,7 @@ export default async function PrivacyPage({
             <h2 className="text-2xl font-semibold mb-4">11. Contact for Privacy Concerns</h2>
             <p>For privacy-related questions, requests, or concerns, please contact:</p>
             <p className="mt-4">
-              <strong>Email:</strong> <a href="mailto:support@videoforge.ai">support@videoforge.ai</a>
+              <strong>Email:</strong> <a href="mailto:support@SoraVideo.ltd">support@SoraVideo.ltd</a>
             </p>
             <p>We aim to respond to all privacy inquiries within 30 days.</p>
           </section>

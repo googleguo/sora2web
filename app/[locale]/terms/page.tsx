@@ -3,8 +3,8 @@ import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 
 export const metadata = {
-  title: "Terms of Service | VideoForge AI",
-  description: "Platform usage terms and conditions for VideoForge AI",
+  title: "Terms of Service | SoraVideo AI",
+  description: "Platform usage terms and conditions for SoraVideo AI",
 }
 
 export default async function TermsPage({
@@ -26,15 +26,15 @@ export default async function TermsPage({
           <section className="mt-8">
             <h2 className="text-2xl font-semibold mb-4">1. Acceptance of Terms</h2>
             <p>
-              By accessing and using VideoForge AI ("the Platform"), you accept and agree to be bound by these Terms of
+              By accessing and using SoraVideo AI ("the Platform"), you accept and agree to be bound by these Terms of
               Service ("Terms"). If you disagree with any part of these terms, you may not access the Platform.
-              VideoForge AI is an independent platform and is not affiliated with any AI model providers.
+              SoraVideo AI is an independent platform and is not affiliated with any AI model providers.
             </p>
           </section>
 
           <section className="mt-8">
             <h2 className="text-2xl font-semibold mb-4">2. User Conduct Guidelines</h2>
-            <p>When using VideoForge AI, you agree not to:</p>
+            <p>When using SoraVideo AI, you agree not to:</p>
             <ul className="list-disc pl-6 space-y-2">
               <li>Infringe upon any copyright, trademark, or other intellectual property rights</li>
               <li>Create harmful, illegal, or offensive content</li>
@@ -47,7 +47,7 @@ export default async function TermsPage({
 
           <section className="mt-8">
             <h2 className="text-2xl font-semibold mb-4">3. Content Policy and Restrictions</h2>
-            <p>The following content is strictly prohibited on VideoForge AI:</p>
+            <p>The following content is strictly prohibited on SoraVideo AI:</p>
             <ul className="list-disc pl-6 space-y-2">
               <li>Adult, sexual, or pornographic content</li>
               <li>Content involving minors in any inappropriate context</li>
@@ -75,12 +75,12 @@ export default async function TermsPage({
 
           <section className="mt-8">
             <h2 className="text-2xl font-semibold mb-4">5. Ownership and Intellectual Property</h2>
-            <p>VideoForge AI respects intellectual property rights:</p>
+            <p>SoraVideo AI respects intellectual property rights:</p>
             <ul className="list-disc pl-6 space-y-2">
               <li>You retain ownership of your original uploaded content</li>
               <li>Premium subscription users receive commercial usage rights for generated content</li>
               <li>Free tier users are limited to personal, non-commercial use</li>
-              <li>VideoForge AI retains all rights to the Platform, technology, and infrastructure</li>
+              <li>SoraVideo AI retains all rights to the Platform, technology, and infrastructure</li>
               <li>You grant us a limited license to process your content for service delivery</li>
             </ul>
           </section>
@@ -152,7 +152,7 @@ export default async function TermsPage({
 
           <section className="mt-8">
             <h2 className="text-2xl font-semibold mb-4">10. Liability Limitations</h2>
-            <p>VideoForge AI is provided "as is" without warranties:</p>
+            <p>SoraVideo AI is provided "as is" without warranties:</p>
             <ul className="list-disc pl-6 space-y-2">
               <li>We make no guarantees regarding content accuracy, quality, or suitability</li>
               <li>We are not liable for any damages resulting from Platform use</li>
@@ -165,7 +165,7 @@ export default async function TermsPage({
           <section className="mt-8">
             <h2 className="text-2xl font-semibold mb-4">11. Indemnification</h2>
             <p>
-              You agree to indemnify and hold harmless VideoForge AI, its officers, directors, employees, and agents
+              You agree to indemnify and hold harmless SoraVideo AI, its officers, directors, employees, and agents
               from any claims, damages, losses, liabilities, and expenses arising from your use of the Platform or
               violation of these Terms.
             </p>
@@ -193,7 +193,7 @@ export default async function TermsPage({
             <h2 className="text-2xl font-semibold mb-4">14. Contact Information</h2>
             <p>For questions about these Terms of Service, please contact us at:</p>
             <p className="mt-4">
-              <strong>Email:</strong> <a href="mailto:support@videoforge.ai">support@videoforge.ai</a>
+              <strong>Email:</strong> <a href="mailto:support@SoraVideo.ltd">support@SoraVideo.ltd</a>
             </p>
           </section>
 

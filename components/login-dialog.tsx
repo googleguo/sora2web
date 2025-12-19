@@ -151,7 +151,7 @@ export function LoginDialog({ open, onOpenChange, redirectTo }: LoginDialogProps
     >
       <DialogContent className="sm:max-w-[425px]">
         <DialogHeader>
-          <DialogTitle>Welcome to VideoForge AI</DialogTitle>
+          <DialogTitle>Welcome to SoraVideo AI</DialogTitle>
           <DialogDescription>Sign in to your account to start generating videos</DialogDescription>
         </DialogHeader>
 
