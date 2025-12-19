@@ -2,6 +2,7 @@ import type React from "react"
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
+import { GoogleAnalytics } from '@next/third-parties/google'
 import { locales } from "@/lib/i18n/config"
 import { notFound } from "next/navigation"
 import "../globals.css"
@@ -51,6 +52,7 @@ export default async function RootLayout({
       <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false} disableTransitionOnChange>
         {children}
       </ThemeProvider>
+      <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID} />
       <Analytics />
       </body>
       </html>

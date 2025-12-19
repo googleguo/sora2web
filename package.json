@@ -10,6 +10,8 @@
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
+    "@next/font": "^14.0.0",
+    "@next/third-parties": "^16.1.0",
     "@radix-ui/react-accordion": "latest",
     "@radix-ui/react-alert-dialog": "latest",
     "@radix-ui/react-aspect-ratio": "latest",
@@ -52,7 +54,6 @@
     "next": "16.0.7",
     "next-intl": "latest",
     "next-themes": "latest",
-    "@next/font": "^14.0.0",
     "react": "19.1.0",
     "react-day-picker": "latest",
     "react-dom": "19.1.0",
