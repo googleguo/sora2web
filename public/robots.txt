@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+# 禁止访问的目录
+Disallow: /private/
+Disallow: /admin/
+Disallow: /api/
+Disallow: /_next/
+
+
+
