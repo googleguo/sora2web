@@ -66,6 +66,9 @@ interface VideoRecord {
   created_at: string
   image_url?: string
   video_id?: string
+  status: number
+  progress: string
+  taskId?: string
 }
 
 interface DashboardClientProps {
@@ -93,7 +96,7 @@ export function DashboardClient({ user, locale, dict }: DashboardClientProps) {
   }, [])
 
   useEffect(() => {
-    if (activeTab === "videos" && videos.length === 0 && !loadingVideos) {
+    if (activeTab === "videos"  && !loadingVideos) {
       fetchVideoHistory()
     }
   }, [activeTab])
@@ -129,6 +132,111 @@ export function DashboardClient({ user, locale, dict }: DashboardClientProps) {
       if (response.ok) {
         const data = await response.json()
         setVideos(data.videos || [])
+        if (data.videos && data.videos.length > 0) {
+          // 为每个视频创建轮询
+          data.videos.forEach((video, index) => {
+            let pollInterval2: NodeJS.Timeout | null = null;
+            console.log("Creating poll interval for video:", video);
+            const taskId = video.task_id;
+            const videoStatus = video.status;
+            if (videoStatus === 0) {
+
+              pollInterval2 = setInterval(async () => {
+                try {
+                  console.log("Polling status for task:", taskId);
+                  const statusResponse = await fetch(`/api/check-video-status?taskId=${taskId}`);
+                  const statusData = await statusResponse.json();
+
+                  console.log("Video generation status:", statusData.state);
+
+                  // 更新视频状态和进度
+                  setVideos(prevVideos =>
+                    prevVideos.map(v =>
+                      v.task_id === taskId ?
+                      {
+                        ...v,
+                        status: statusData.state === "succeeded" ? 1 : statusData.state === "error" ? 2 : 0,
+                        progress: statusData.progress || v.progress || "0%",
+                        video_url: statusData.videoUrl || v.video_url
+                      } : v
+                    )
+                  );
+
+                  if (statusData.state === "succeeded") {
+                    if (pollInterval2) clearInterval(pollInterval2);
+                    try {
+                      await fetch("/api/user/video-history", {
+                        method: "POST",
+                        headers: { "Content-Type": "application/json" },
+                        body: JSON.stringify({
+                          type: video.type,
+                          prompt:video.prompt,
+                          videoUrl: statusData.videoUrl,
+                          duration: video.duration,
+                          aspectRatio:video.aspect_ratio,
+                          model:video.model,
+                          videoId: statusData.videoId || statusData.id || undefined,
+                          taskId: taskId || undefined,
+                          status: 1,
+                        }),
+                      });
+                    } catch (saveErr) {
+                      console.error(`${statusData.id} Error saving video to history:`, saveErr);
+                    }
+                  } else if (statusData.state === "error") {
+                    if (pollInterval2) clearInterval(pollInterval2);
+                    const creditRecord = creditHistory.find(record => record.task_id === taskId);
+                    const amount1 = Math.abs(creditRecord?.amount || 0);
+                    const balance = (profile?.credits || 0) + amount1;
+                    await fetch("/api/return-credits", {
+                      method: "POST",
+                      headers: {
+                        "Content-Type": "application/json",
+                      },
+                      body: JSON.stringify({
+                        currentCredits: balance,
+                        creditsDeducted: amount1,
+                      }),
+                    });
+                    await fetch("/api/user/video-history", {
+                      method: "POST",
+                      headers: { "Content-Type": "application/json" },
+                      body: JSON.stringify({
+                        type: video.type,
+                        prompt:video.prompt,
+                        videoUrl: statusData.videoUrl,
+                        duration: video.duration,
+                        aspectRatio:video.aspect_ratio,
+                        model:video.model,
+                        videoId: statusData.videoId || statusData.id || undefined,
+                        taskId: taskId || undefined,
+                        status: 2,
+                      }),
+                    });
+                    throw new Error(statusData.message || `${statusData.id} Video generation failed`);
+                  }
+                } catch (err) {
+                  if (pollInterval2) clearInterval(pollInterval2);
+                  // 更新视频状态为失败
+                  setVideos(prevVideos =>
+                    prevVideos.map(v =>
+                      v.taskId === taskId ? { ...v, status: 2 } : v
+                    )
+                  );
+                  throw err;
+                }
+              }, 8000);
+
+              // 设置超时清理
+              setTimeout(() => {
+                if (pollInterval2) clearInterval(pollInterval2);
+              }, 400000);
+
+            }
+
+          });
+        }
+
       }
     } catch (error) {
       console.error("Failed to fetch video history:", error)
@@ -424,17 +532,56 @@ export function DashboardClient({ user, locale, dict }: DashboardClientProps) {
                         {videos.map((video) => (
                           <Card key={video.id} className="overflow-hidden">
                             <div className="relative aspect-video bg-secondary">
-                              <video src={video.video_url} className="w-full h-full object-cover" preload="metadata" />
-                              <div className="absolute inset-0 flex items-center justify-center bg-black/30 opacity-0 hover:opacity-100 transition-opacity">
-                                <Button size="sm" variant="secondary" asChild>
-                                  <a href={video.video_url} target="_blank" rel="noopener noreferrer">
-                                    <Play className="mr-1 h-4 w-4" />
-                                    Play
-                                  </a>
-                                </Button>
-                              </div>
+                              {video.status === 0 ? (
+                                <div className="absolute inset-0 flex flex-col items-center justify-center p-4 bg-gray-900">
+                                  <div className="text-white text-lg font-medium mb-4">Video Generation in Progress</div>
+                                  <div className="w-full max-w-xs">
+                                    <div className="flex justify-between text-white text-sm mb-1">
+                                      <span>Progress</span>
+                                      <span>{video.progress || '0%'}</span>
+                                    </div>
+                                    <div className="h-2 bg-gray-700 rounded-full overflow-hidden">
+                                      <div
+                                        className="h-full bg-blue-500 rounded-full transition-all duration-500 ease-in-out"
+                                        style={{
+                                          width: `${Math.min(100, parseFloat(video.progress) || 0)}%`,
+                                          // 进度完成时改变颜色
+                                          backgroundColor: parseFloat(video.progress) >= 100 ? '#10B981' : '#3B82F6'
+                                        }}
+                                      />
+                                    </div>
+                                  </div>
+                                  <div className="mt-4 text-sm text-gray-300">
+                                    Status: {video.status === 0 ? 'Generating' : video.status === 1 ? 'Completed' : 'Failed'}
+                                  </div>
+                                </div>
+                              ) : video.status === 1 ? (
+                                <>
+                                  <video src={video.video_url} className="w-full h-full object-cover" preload="metadata" />
+                                  <div className="absolute inset-0 flex items-center justify-center bg-black/30 opacity-0 hover:opacity-100 transition-opacity">
+                                    <Button size="sm" variant="secondary" asChild>
+                                      <a href={video.video_url} target="_blank" rel="noopener noreferrer">
+                                        <Play className="mr-1 h-4 w-4" />
+                                        Play
+                                      </a>
+                                    </Button>
+                                  </div>
+                                </>
+                              ) : (
+                                <div className="absolute inset-0 flex flex-col items-center justify-center p-4 bg-gray-900">
+                                  <div className="text-red-500 text-lg font-medium mb-2">Video Generation Failed</div>
+                                  <p className="text-white text-sm text-center">
+                                    Sorry, we couldn't generate your video. Please try again later.
+                                  </p>
+                                </div>
+                              )}
                               <Badge className="absolute top-2 left-2 text-xs">
                                 {video.type === "text-to-video" ? "Text" : "Image"}
+                              </Badge>
+                              <Badge
+                                className={`absolute top-2 right-2 text-xs ${video.status === 0 ? 'bg-yellow-500' : video.status === 1 ? 'bg-green-500' : 'bg-red-500'}`}
+                              >
+                                {video.status === 0 ? 'Generating' : video.status === 1 ? 'Completed' : 'Failed'}
                               </Badge>
                             </div>
                             <CardContent className="p-3">
@@ -449,14 +596,34 @@ export function DashboardClient({ user, locale, dict }: DashboardClientProps) {
                                   {new Date(video.created_at).toLocaleDateString()}
                                 </div>
                               </div>
-                              <div className="mt-2 flex gap-2">
-                                <Button size="sm" variant="outline" className="flex-1 bg-transparent" asChild>
-                                  <a href={video.video_url} download target="_blank" rel="noopener noreferrer">
-                                    <Download className="mr-1 h-3 w-3" />
-                                    Download
-                                  </a>
-                                </Button>
-                              </div>
+
+                              {/* Progress Bar for Generating Videos */}
+                              {/*{video.status === 0 && (*/}
+                              {/*  <div className="mt-2">*/}
+                              {/*    <div className="flex justify-between text-xs text-muted-foreground mb-1">*/}
+                              {/*      <span>Generation Progress: </span>*/}
+                              {/*      <span>{video.progress} 111222</span>*/}
+                              {/*    </div>*/}
+                              {/*    <div className="h-2 bg-gray-200 rounded-full overflow-hidden">*/}
+                              {/*      <div*/}
+                              {/*        className="h-full bg-blue-500 rounded-full transition-all duration-500 ease-in-out"*/}
+                              {/*        style={{ width: video.progress }}*/}
+                              {/*      />*/}
+                              {/*    </div>*/}
+                              {/*  </div>*/}
+                              {/*)}*/}
+
+                              {/* Download Button for Completed Videos */}
+                              {video.status === 1 && (
+                                <div className="mt-2 flex gap-2">
+                                  <Button size="sm" variant="outline" className="flex-1 bg-transparent" asChild>
+                                    <a href={video.video_url} download target="_blank" rel="noopener noreferrer">
+                                      <Download className="mr-1 h-3 w-3" />
+                                      Download
+                                    </a>
+                                  </Button>
+                                </div>
+                              )}
                             </CardContent>
                           </Card>
                         ))}

@@ -115,6 +115,20 @@ export function TextToVideoForm() {
             setStatusMessage("")
 
             try {
+              // await fetch("/api/user/video-history", {
+              //   method: "POST",
+              //   headers: { "Content-Type": "application/json" },
+              //   body: JSON.stringify({
+              //     type: "text-to-video",
+              //     prompt,
+              //     videoUrl: statusData.videoUrl,
+              //     duration: selectedDuration,
+              //     aspectRatio,
+              //     model,
+              //     videoId: statusData.videoId || statusData.id ||undefined,
+              //     progress: statusData.progress || undefined,
+              //   }),
+              // })
               await fetch("/api/user/video-history", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
@@ -126,7 +140,8 @@ export function TextToVideoForm() {
                   aspectRatio,
                   model,
                   videoId: statusData.videoId || statusData.id ||undefined,
-                  progress: statusData.progress || undefined,
+                  taskId: taskId || undefined,
+                  status:1,
                 }),
               })
             } catch (saveErr) {
@@ -144,9 +159,24 @@ export function TextToVideoForm() {
                 creditsDeducted: data.creditsDeducted,
               }),
             })
+            await fetch("/api/user/video-history", {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({
+                type: "text-to-video",
+                prompt,
+                videoUrl: statusData.videoUrl||undefined,
+                duration: selectedDuration,
+                aspectRatio,
+                model,
+                videoId: statusData.videoId || statusData.id ||undefined,
+                taskId: taskId || undefined,
+                status:2,
+              }),
+            })
             throw new Error(statusData.message || "Video generation failed")
           } else {
-            setStatusMessage(`Video generation in progress... (${statusData.state})`)
+            setStatusMessage(`Video generation in progress... (${statusData.state}),The progress is ${statusData.progress}`)
           }
         } catch (err) {
           if (pollInterval) clearInterval(pollInterval)

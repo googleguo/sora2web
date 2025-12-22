@@ -121,7 +121,7 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: "Invalid API response: no task ID returned" }, { status: 500 })
     }
 
-    console.log("[v0] Successfully created task with ID:", taskId)
+    console.log("Successfully created task with ID:", taskId)
 
     // Deduct credits
     const { error: deductError } = await supabaseAdmin
@@ -155,6 +155,28 @@ export async function POST(request: NextRequest) {
     }
 
     console.log(`[v0] Deducted ${creditCost} credits from user ${user.id}. Remaining: ${currentCredits - creditCost}`)
+
+    const { error: videoHistoryError } = await supabase
+        .from("video_history")
+        .insert({
+          user_id: user.id,
+          type: !!image_urls ? "image-to-video" : "text-to-video",
+          prompt,
+          duration,
+          aspect_ratio: aspect_ratio,
+          model,
+          task_id:taskId,
+          video_url: "",
+        })
+        .select()
+        .single()
+
+    if (videoHistoryError) {
+      console.error("Error saving video history:", videoHistoryError)
+      return NextResponse.json({ error: "Failed to save video" }, { status: 500 })
+    }
+
+
 
 
     return NextResponse.json({

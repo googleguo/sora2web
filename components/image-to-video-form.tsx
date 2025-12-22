@@ -168,18 +168,34 @@ export function ImageToVideoForm() {
             setStatusMessage("")
 
             try {
+              // await fetch("/api/user/video-history", {
+              //   method: "POST",
+              //   headers: { "Content-Type": "application/json" },
+              //   body: JSON.stringify({
+              //     type: "image-to-video",
+              //     prompt,
+              //     videoUrl: statusData.videoUrl,
+              //     duration: selectedDuration,
+              //     aspectRatio,
+              //     model,
+              //     imageUrl: uploadedImageUrl || undefined,
+              //     videoId: statusData.videoId || undefined,
+              //   }),
+              // })
               await fetch("/api/user/video-history", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({
                   type: "image-to-video",
                   prompt,
-                  videoUrl: statusData.videoUrl,
+                  videoUrl: statusData.videoUrl||undefined,
                   duration: selectedDuration,
                   aspectRatio,
                   model,
                   imageUrl: uploadedImageUrl || undefined,
-                  videoId: statusData.videoId || undefined,
+                  videoId: statusData.videoId || statusData.id ||undefined,
+                  taskId: taskId || undefined,
+                  status:1,
                 }),
               })
             } catch (saveErr) {
@@ -195,6 +211,22 @@ export function ImageToVideoForm() {
               body: JSON.stringify({
                 currentCredits: data.currentCredits,
                 creditsDeducted: data.creditsDeducted,
+              }),
+            })
+            await fetch("/api/user/video-history", {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({
+                type: "image-to-video",
+                prompt,
+                videoUrl: statusData.videoUrl||undefined,
+                duration: selectedDuration,
+                aspectRatio,
+                model,
+                imageUrl: uploadedImageUrl || undefined,
+                videoId: statusData.videoId || statusData.id ||undefined,
+                taskId: taskId || undefined,
+                status:2,
               }),
             })
             throw new Error(statusData.message || "Video generation failed")

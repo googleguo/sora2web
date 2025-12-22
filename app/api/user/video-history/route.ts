@@ -54,27 +54,34 @@ export async function POST(request: Request) {
     }
 
     const body = await request.json()
-    const { type, prompt, videoUrl, duration, aspectRatio, model, imageUrl, videoId,progress } = body
+    const { type, prompt, videoUrl, duration, aspectRatio, model, imageUrl, videoId,taskId,status } = body
 
     if (!type || !prompt || !videoUrl || !duration || !aspectRatio || !model) {
       return NextResponse.json({ error: "Missing required fields" }, { status: 400 })
     }
 
+    // const { data: video, error } = await supabase
+    //   .from("video_history")
+    //   .insert({
+    //     user_id: user.id,
+    //     type,
+    //     prompt,
+    //     video_url: videoUrl,
+    //     duration,
+    //     aspect_ratio: aspectRatio,
+    //     model,
+    //     image_url: imageUrl || null,
+    //     video_id: videoId || null,
+    //   })
+    //   .select()
+    //   .single()
     const { data: video, error } = await supabase
-      .from("video_history")
-      .insert({
-        user_id: user.id,
-        type,
-        prompt,
-        video_url: videoUrl,
-        duration,
-        aspect_ratio: aspectRatio,
-        model,
-        image_url: imageUrl || null,
-        video_id: videoId || null,
-      })
-      .select()
-      .single()
+        .from("video_history")
+        .update({ video_url: videoUrl|| null,video_id: videoId || null,status:status,image_url: imageUrl || null  })
+        .eq("task_id", taskId)
+        .eq("user_id", user.id)
+        .select()
+        .single()
 
     if (error) {
       console.error("Error saving video history:", error)

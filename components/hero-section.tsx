@@ -75,7 +75,7 @@ export function HeroSection({ dict }: HeroSectionProps) {
             <div className="hidden sm:block h-4 w-px bg-border" />
             <div className="flex items-center gap-2 text-muted-foreground">
               <div className="h-2 w-2 rounded-full bg-primary animate-pulse shadow-lg shadow-primary/50 animation-delay-300" />
-              <span className="font-medium">Cancel anytime</span>
+              <span className="font-medium">Remove Sora 2 watermarks</span>
             </div>
           </div>
         </div>
