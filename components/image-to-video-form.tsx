@@ -257,8 +257,8 @@ export function ImageToVideoForm() {
 
   const getCreditCost = () => {
     const durationNum = Number.parseInt(duration)
-    if (durationNum === 25) return 50
-    return 10
+    if (durationNum === 25) return 150
+    return 15
   }
 
   return (
@@ -277,36 +277,36 @@ export function ImageToVideoForm() {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8">
         {/* Left Column - Form */}
         <div className="space-y-4 sm:space-y-6">
-          {isAuthenticated ? (
-            userCredits !== null && (
-              <Card className="p-3 sm:p-4 bg-primary/5 border-primary/20">
-                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
-                  <div className="flex items-center gap-2">
-                    <Sparkles className="h-4 w-4 sm:h-5 sm:w-5 text-primary" />
-                    <span className="font-semibold text-sm sm:text-base">Available Credits:</span>
-                    <span className="text-xl sm:text-2xl font-bold text-primary">{userCredits}</span>
-                  </div>
-                  <div className="text-xs sm:text-sm text-muted-foreground">
-                    Cost: <span className="font-semibold text-foreground">{getCreditCost()}</span> credits
-                  </div>
-                </div>
-              </Card>
-            )
-          ) : (
-            <Card className="p-3 sm:p-4 bg-amber-500/10 border-amber-500/20">
-              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
-                <div className="flex items-center gap-2">
-                  <AlertCircle className="h-4 w-4 sm:h-5 sm:w-5 text-amber-500" />
-                  <span className="text-sm sm:text-base text-amber-700 dark:text-amber-400">
-                    Please login to generate videos
-                  </span>
-                </div>
-                <Button size="sm" onClick={() => setShowLoginDialog(true)}>
-                  Login
-                </Button>
-              </div>
-            </Card>
-          )}
+          {/*{isAuthenticated ? (*/}
+          {/*  userCredits !== null && (*/}
+          {/*    <Card className="p-3 sm:p-4 bg-primary/5 border-primary/20">*/}
+          {/*      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">*/}
+          {/*        <div className="flex items-center gap-2">*/}
+          {/*          <Sparkles className="h-4 w-4 sm:h-5 sm:w-5 text-primary" />*/}
+          {/*          <span className="font-semibold text-sm sm:text-base">Available Credits:</span>*/}
+          {/*          <span className="text-xl sm:text-2xl font-bold text-primary">{userCredits}</span>*/}
+          {/*        </div>*/}
+          {/*        <div className="text-xs sm:text-sm text-muted-foreground">*/}
+          {/*          Cost: <span className="font-semibold text-foreground">{getCreditCost()}</span> credits*/}
+          {/*        </div>*/}
+          {/*      </div>*/}
+          {/*    </Card>*/}
+          {/*  )*/}
+          {/*) : (*/}
+          {/*  <Card className="p-3 sm:p-4 bg-amber-500/10 border-amber-500/20">*/}
+          {/*    <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">*/}
+          {/*      <div className="flex items-center gap-2">*/}
+          {/*        <AlertCircle className="h-4 w-4 sm:h-5 sm:w-5 text-amber-500" />*/}
+          {/*        <span className="text-sm sm:text-base text-amber-700 dark:text-amber-400">*/}
+          {/*          Please login to generate videos*/}
+          {/*        </span>*/}
+          {/*      </div>*/}
+          {/*      <Button size="sm" onClick={() => setShowLoginDialog(true)}>*/}
+          {/*        Login*/}
+          {/*      </Button>*/}
+          {/*    </div>*/}
+          {/*  </Card>*/}
+          {/*)}*/}
 
           <Card className="p-4 sm:p-6 bg-card border-border">
             <div className="space-y-4 sm:space-y-6">
@@ -420,7 +420,7 @@ export function ImageToVideoForm() {
                 ) : (
                   <>
                     <Sparkles className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
-                    Generate Video
+                    Generate Video  ({getCreditCost()} credits)
                   </>
                 )}
               </Button>

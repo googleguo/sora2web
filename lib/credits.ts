@@ -1,8 +1,8 @@
 // Credit deduction utilities
 export const CREDIT_COSTS = {
-  "10": 10, // 10秒视频消耗10积分
-  "15": 10, // 15秒视频消耗10积分
-  "25": 50, // 25秒视频消耗50积分
+  "10": 15, // 10秒视频消耗15积分
+  "15": 15, // 15秒视频消耗15积分
+  "25": 150, // 25秒视频消耗150积分
 } as const
 
 export function getCreditCostForDuration(duration: number): number {
